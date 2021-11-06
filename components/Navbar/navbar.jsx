@@ -19,7 +19,6 @@ const navJson = [
 ];
 export const Navbar = () => {
   const router = useRouter();
-  console.log(router.pathname, "pathname");
   return (
     <div className={styles.NavbarWrapper}>
       {navJson.map((link, index) => {

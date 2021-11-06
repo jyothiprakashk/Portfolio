@@ -16,7 +16,6 @@ class MyDocument extends Document {
           : 'light'
         document.body.dataset.theme=getUserPreference()
     }` 
-    console.log(DarkThemeData)
     return (
       <Html>
         <Head />

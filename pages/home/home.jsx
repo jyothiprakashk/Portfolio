@@ -1,7 +1,7 @@
 import React from "react";
 import { SocialMedia } from "../../components/SocialMediaIcons/socialmedia";
 import styles from "../../styles/HomePage.module.css";
-export const HomePage = () => {
+const HomePage = () => {
   return (
     <div className={styles.container}>
       <div className={styles.textWrapper}>
@@ -15,3 +15,4 @@ export const HomePage = () => {
     </div>
   );
 };
+export default HomePage;
