@@ -1,0 +1,57 @@
+.SocialMediaImages {
+    width: 45px;
+    height: 45px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+    box-shadow: 0px 0px 6px #0000002e;
+}
+.socialWrapper {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 4rem;
+
+}
+
+.SocialMediaImages:hover{
+    background-color: black;
+}
+
+.SocialMediaImages:last-child:hover{
+    background-color: palegreen;
+}
+
+
+
+/* Footer */
+.FooterWrapper {
+    color: rgb(127, 141, 170);
+    font-size: 17px;
+    font-family: 'GoogleSansRegular';
+    font-weight: 700;
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    margin: 3px;
+}
+
+.githubLogo span {
+    width: 20px !important;
+}
+
+.FooterWrapper ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.FooterWrapper ul li {
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    font-size: 12px;
+}
