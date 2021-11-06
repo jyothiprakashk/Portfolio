@@ -23,6 +23,9 @@
     padding: 0 10px;
 }
 
+.htmlTag {
+    font-family: "GoogleSansRegular";
+}
 .headerCumNavbar {
     display: flex;
     justify-content: space-between;
@@ -39,10 +42,16 @@
     align-items: baseline;
 }
 .Navbar {
-    padding: 20px;
+    padding: 15px;
     display: flex;
     align-items: center;
     font-family: "GoogleSansRegular";
+    cursor: pointer;
+}
+.Navbar:hover {
+    background-color: darkslategrey;
+    border-radius: 10px;
+    color: white;
 }
 
 .activeClass {
