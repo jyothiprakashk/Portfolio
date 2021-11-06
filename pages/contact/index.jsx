@@ -13,7 +13,7 @@ const Contact = () => {
         <h1>Contact Me</h1>
         <p>
           I am available almost all social media platforms 👀.You can ping me, I will reply within 24 hours.I can help
-          you with Frontend Tech's like JavaScript,NextJs,ReactJs 👨‍💻.
+          you with Frontend Technology like JavaScript,NextJs,ReactJs 👨‍💻.
         </p>
         <SocialMedia />
         {/* <div> */}
