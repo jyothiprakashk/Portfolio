@@ -53,7 +53,7 @@
 .Container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: start;
+    justify-content: flex-start;
     margin: auto;
     align-items: center;
     width: 100%;

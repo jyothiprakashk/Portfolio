@@ -24,7 +24,7 @@ export const Navbar = () => {
       {navJson.map((link, index) => {
         return (
           <nav className={styles.Navbar} key={index}>
-            <Link href={link.Route}>
+            <Link href={link.Route} passHref>
               <div className={router.pathname === link.Route ? styles.activeClass : styles.normalClass}>
                 {link.Name}
               </div>

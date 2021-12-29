@@ -10,7 +10,7 @@ const HomePage = () => {
         <div className={styles.textWrapper}>
           <h1>Jyothi Prakash K</h1>
           <p>
-            Hi, myself is Jyothi Prakash I'm Front End Developer from India ☀️. A self motivated and passionate about
+            Hi, myself is Jyothi Prakash I am Front End Developer from India ☀️. A self motivated and passionate about
             indivudual work as well as team work 🧑‍💻 on end to end products which develop scalable products like Web
             apps.
           </p>
