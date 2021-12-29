@@ -3,26 +3,28 @@ body {
   padding: 0;
   margin: 0;
   background-color: rgb(237, 249, 254);
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+    Helvetica Neue, sans-serif;
 }
-
-
-
+:root {
+  --color-text-secondary: rgb(237, 249, 254);
+  --paragraph-font: 2rem;
+  --card-white: #ffffff;
+}
 @font-face {
-  font-family: 'Agustina';
-  src: url('../fonts/Agustina.otf');
+  font-family: "Agustina";
+  src: url("../fonts/Agustina.otf");
   font-weight: 900;
   font-style: normal;
 }
 @font-face {
   font-family: "GoogleSansBold";
-  src: url('../fonts/GoogleSans-Bold.ttf');
+  src: url("../fonts/GoogleSans-Bold.ttf");
 }
 
 @font-face {
   font-family: "GoogleSansRegular";
-  src: url('../fonts/GoogleSans-Regular.ttf');
+  src: url("../fonts/GoogleSans-Regular.ttf");
 }
 
 a {
@@ -35,34 +37,211 @@ a {
 }
 
 .bodyWrapper {
-  margin: 0 3rem;
-  padding-top: 10px;
+  width: 71%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 body,
 body[data-theme="light"] {
   --color-text-primary: #27201a;
   --color-text-secondary: rgb(0, 28, 85);
   --color-bg-primary: rgb(237, 249, 254);
-  --color-bg-toggle: #1E90FF;
-  --box-shadow:0px 0px 6px #0000002e; 
+  --color-bg-toggle: #1e90ff;
+  --box-shadow: 0px 0px 6px #0000002e;
+  --color-text-h3: rgb(0, 28, 85);
+  --blue-text: #3b49df;
+  --card-white: black;
+  --code-background:rgba(0,0,0,0.1);
+  --code-color: white;
+  --toggle-background:white;
+
+
 }
 
 body[data-theme="dark"] {
   --color-text-primary: #e3e3e3;
-  --color-text-secondary: #ff6b00;
+  --color-text-secondary: #e3e3e3;
   --color-bg-primary: #15232d;
-  --color-bg-toggle: #a9a9a9; 
+  --color-bg-toggle: #a9a9a9;
+  --color-text-h3: rgb(237, 249, 254);
+  --blue-text: #3b49df;
+  --card-white: #ffffff;
+  --code-background:#bdb9b9;
+  --code-color: #15232d;
+  --toggle-background:black;
+
+
+}
+
+html {
+  background-color: var(--color-bg-primary);
+  box-shadow: var(--box-shadow);
+
 }
 
 body {
   background: var(--color-bg-primary);
   color: var(--color-text-primary);
   font-family: sans-serif;
-	transition: background 0.25s ease-in-out;
-  height: 100vh;
-  box-shadow: var(--box-shadow);
+  transition: background 0.25s ease-in-out;
+  height: 100% !important;
 }
 
 h1 {
   color: var(--color-text-secondary);
+  font-family: GoogleSansBold;
+  font-size: 50px;
+}
+
+h3 {
+  color: var(--color-text-secondary);
+  font-family: GoogleSansRegular;
+  font-size: 25px;
+}
+
+h5 {
+  color: var(--color-text-secondary);
+  font-family: GoogleSansRegular;
+  font-size: 15px;
+}
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+.header a {
+  text-decoration: none;
+}
+
+.header {
+  display: none;
+  padding: 0 20px;
+  height: 63px;
+  /* display: flex; */
+  justify-content: space-between;
+  background-color: black;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+#brand {
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+#brand a {
+  color: #09c372;
+}
+
+.header ul {
+  list-style: none;
+  height: 100%;
+  /* display: flex; */
+  align-items: center;
+  justify-content: space-around;
+}
+
+.header ul a {
+  color: white;
+}
+
+.header ul li {
+  padding: 5px;
+  margin-left: 10px;
+}
+
+.header ul li:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+#login,
+#signup {
+  border-radius: 5px;
+  padding: 5px 8px;
+}
+
+#login {
+  border: 1px solid #498afb;
+}
+
+#signup {
+  border: 1px solid #ff3860;
+}
+
+#signup a {
+  color: #ff3860;
+}
+
+#login a {
+  color: #498afb;
+}
+
+.header #hamburgericon {
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
+}
+
+.header #hamburgericon .main div {
+  width: 35px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+  opacity: 0;
+}
+
+.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobilemenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.mobilemenu {
+  display: none;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background-color: var(--toggle-background);
+  height: 15rem !important;
+  margin-top: 8px;
+  padding-left: 0;
+  color: var(--card-white);
+}
+
+.mobilemenu li {
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 700px) {
+  .header {
+    display: flex;
+  }
+  .header #hamburgericon {
+    display: block;
+  }
+
+  .bodyWrapper {
+    width: 90%;
+  }
 }

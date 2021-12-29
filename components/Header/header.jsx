@@ -4,26 +4,63 @@ import styles from "../../styles/HomePage.module.css";
 import { Navbar } from "../Navbar/navbar";
 import JPIcon from "../../images/jyothiprakash.jpeg";
 import Image from "next/image";
+import Link from "next/link";
 export const Header = () => {
   const router = useRouter();
-  console.log(router.pathname);
+
+  function toggleMobileMenu(menu) {
+    let data = document.getElementById("hamburgericon");
+    data?.classList?.toggle("open");
+  }
   return (
-    <div className={styles.headerCumNavbar}>
-      <div className={styles.HeaderWrapper}>
+    <>
+      <div className={styles.headerCumNavbar}>
+        <div className={styles.headerContainer}>
+          <div className={styles.HeaderWrapper}>
+            {router.pathname === "/contact" ? (
+              <Link href={"/"} passHref>
+                <h1 className={styles.nameofUser}>Jyothi Prakash</h1>
+              </Link>
+            ) : (
+              <>
+                <Link href={"/"} passHref>
+                  <div className={styles.HeaderWrapper}>
+                    <Image src={JPIcon} alt='Jyothi Prakash' />
+                    <div className={styles.nameofUser}>Jyothi Prakash</div>
+                  </div>
+                </Link>
+              </>
+            )}
+          </div>
+          <Navbar />
+        </div>
+      </div>
+      <div className='header'>
         {router.pathname === "/contact" ? (
-          <>
-            <h1 className={styles.htmlTag}>{`<`}</h1>
+          <Link href={"/"} passHref>
             <h1 className={styles.nameofUser}>Jyothi Prakash</h1>
-            <h1 className={styles.htmlTag}>{`/>`}</h1>
-          </>
+          </Link>
         ) : (
           <>
-            <Image src={JPIcon} alt='Jyothi Prakash' />
-            <h1 className={styles.nameofUser}>Jyothi Prakash</h1>
+            <Link href={"/"} passHref>
+              <div className={styles.HeaderWrapper}>
+                <Image src={JPIcon} alt='Jyothi Prakash' />
+                <div className={styles.nameofUser}>Jyothi Prakash</div>
+              </div>
+            </Link>
           </>
         )}
+        <div id='hamburgericon' onClick={() => toggleMobileMenu(this)}>
+          <div className='main'>
+            <div className='bar1'></div>
+            <div className='bar2'></div>
+            <div className='bar3'></div>
+          </div>
+          <ul className='mobilemenu'>
+            <Navbar />
+          </ul>
+        </div>
       </div>
-      <Navbar />
-    </div>
+    </>
   );
 };

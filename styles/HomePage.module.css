@@ -1,12 +1,11 @@
 .HeaderWrapper {
     display: flex;
     align-items: center;
-    padding: 12px;
     cursor: pointer;
   }
 .HeaderWrapper span {
-    width: 5rem !important;
-    height: 5rem !important;
+    width: 3rem !important;
+    height: 3rem !important;
 }
 .HeaderWrapper span img {
     width: 5rem;
@@ -14,22 +13,29 @@
     border-radius: 50%;
 }
 .nameofUser{
-    /* color: rgb(0, 28, 85); */
-    font-family: 'Agustina';
-    font-size: 30px;
+    font-size: 1.15rem;
     font-weight: 900;
-    margin-top: 15px;
-    margin-bottom: 0px;
     padding: 0 10px;
+    font-family: GoogleSansBold;
+    color: white;
+    display: flex;
+    align-items: center;
+
 }
 
-.htmlTag {
-    font-family: "GoogleSansRegular";
+.homeImage {
+    min-width: 32rem;
+    max-width: 35rem;
 }
+
 .headerCumNavbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    z-index: 99;
 }
 
 .userName {
@@ -39,7 +45,9 @@
 /* Navbar Styles */
 .NavbarWrapper {
     display: flex;
-    align-items: baseline;
+    justify-content: center;
+    align-items: center;
+    
 }
 .Navbar {
     padding: 15px;
@@ -48,19 +56,22 @@
     font-family: "GoogleSansRegular";
     cursor: pointer;
 }
-.Navbar:hover {
-    background-color: darkslategrey;
-    border-radius: 10px;
-    color: white;
-}
 
 .activeClass {
-    font-size: 20px;
-    font-family: "GoogleSansRegular";
+    font-family: GoogleSansBold;
     font-weight: bold;
+    opacity: 1;
+    color: var(--card-white);
+
+
 }
 
+.normalClass {
+    opacity: 0.7;
+    color: var(--card-white);
 
+
+}
 /* Themes */
 .themeWrapper {
     cursor: pointer;
@@ -87,3 +98,44 @@
     text-align: start;
     line-height: 35px;
 }
+.container {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    flex-direction: column;
+  }
+  
+  .maindata {
+    display: flex;
+    padding-top: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 71%;
+    margin: auto;
+    padding: 10px;
+  }
+
+
+  @media only screen and (max-width: 700px) {
+    .headerCumNavbar {
+        display: none;
+    }
+
+
+    .textWrapper {
+        width: 100%;
+    }
+    .textWrapper h1 {
+        padding-top: 0;
+    }
+
+    .NavbarWrapper {
+        flex-direction: column;
+    }
+  }
