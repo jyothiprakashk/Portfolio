@@ -2,7 +2,6 @@ import React from "react";
 import { SocialMedia } from "../../components/SocialMediaIcons/socialmedia";
 import styles from "../../styles/HomePage.module.css";
 import HomeIcon from "../../images/home.svg";
-// import Image from "next/image";
 const HomePage = () => {
   return (
     <div className={styles.container}>
@@ -15,7 +14,9 @@ const HomePage = () => {
             apps.
           </p>
         </div>
-        <div className={styles.homeImage}>{/* <Image src={HomeIcon} alt='home' /> */}</div>
+        <div className={styles.homeImage}>
+          <img src={HomeIcon.src} alt='home' />
+        </div>
       </div>
       <SocialMedia />
     </div>

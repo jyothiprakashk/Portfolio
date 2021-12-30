@@ -1,5 +1,4 @@
 import React from "react";
-// import Image from "next/image";
 import facebook from "../../images/facebook.png";
 import twitter from "../../images/twitter.png";
 import instagram from "../../images/instagram.png";
@@ -20,7 +19,7 @@ export const SocialMedia = () => {
         return (
           <div key={index} className={styles.SocialMediaImages}>
             <a href={icons.url} target='_blank' rel='noreferrer'>
-              {/* <Image src={icons.Icon} alt={icons.Name} /> */}
+              <img src={icons.Icon.src} alt={icons.Name} />
             </a>
           </div>
         );

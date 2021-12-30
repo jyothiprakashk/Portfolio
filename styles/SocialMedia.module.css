@@ -7,6 +7,12 @@
     cursor: pointer;
     box-shadow: 0px 0px 6px #0000002e;
 }
+
+.SocialMediaImages img {
+    width: 25px;
+    height: 25px;
+}
+
 .socialWrapper {
     display: flex;
     justify-content: space-evenly;
@@ -38,7 +44,7 @@
     margin: 3px;
 }
 
-.githubLogo span {
+.githubLogo img{
     width: 20px !important;
 }
 

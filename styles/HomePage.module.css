@@ -3,13 +3,10 @@
     align-items: center;
     cursor: pointer;
   }
-.HeaderWrapper span {
-    width: 3rem !important;
-    height: 3rem !important;
-}
-.HeaderWrapper span img {
-    width: 5rem;
-    height: 5rem;
+
+.HeaderWrapper img {
+    width: 3rem;
+    height: 3rem;
     border-radius: 50%;
 }
 .nameofUser{
@@ -23,7 +20,7 @@
 
 }
 
-.homeImage {
+.homeImage img{
     min-width: 32rem;
     max-width: 35rem;
 }
@@ -137,5 +134,13 @@
 
     .NavbarWrapper {
         flex-direction: column;
+    }
+    .maindata {
+        justify-content: center;
+    }
+
+    .homeImage img{
+        min-width: 20rem;
+        max-width: 22rem;
     }
   }

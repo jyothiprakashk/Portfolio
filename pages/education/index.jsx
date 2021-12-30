@@ -1,5 +1,4 @@
 import React from "react";
-// import Image from "next/image";
 import EducationIcon from "../../images/education.svg";
 import { TalentCard } from "../../components/TalentCard";
 import styles from "../../styles/Education.module.css";
@@ -8,7 +7,7 @@ const Education = () => {
   return (
     <div>
       <div className={styles.educationContainer}>
-        {/* <Image src={EducationIcon} alt='Education' /> */}
+        <img src={EducationIcon.src} alt='Education' />
         <div className={styles.headingContainer}>
           <h1>Education</h1>
           <h3>Basic Qualification and Certifications</h3>
@@ -19,7 +18,7 @@ const Education = () => {
         <h3>Degrees Received</h3>
 
         <div className={styles.degree}>
-          {/* <Image src={BharathIcon} alt='bharath' /> */}
+          <img src={BharathIcon.src} alt='bharath' />
           <div className={styles.educationContent}>
             <div className={styles.maindata}>
               <div>

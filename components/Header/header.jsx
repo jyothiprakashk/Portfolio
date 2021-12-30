@@ -2,8 +2,7 @@ import React from "react";
 import { useRouter } from "next/router";
 import styles from "../../styles/HomePage.module.css";
 import { Navbar } from "../Navbar/navbar";
-import data from "../../images/jyothiprakash.jpeg";
-// import Image from "next/image";
+import jPIcon from "../../images/jyothiprakash.jpeg";
 import Link from "next/link";
 export const Header = () => {
   const router = useRouter();
@@ -25,7 +24,7 @@ export const Header = () => {
               <>
                 <Link href={"/"} passHref>
                   <div className={styles.HeaderWrapper}>
-                    <img src={data} layout='fill' alt='Jyothi Prakash' />
+                    <img src={jPIcon.src} alt='Jyothi Prakash' />
                     <div className={styles.nameofUser}>Jyothi Prakash</div>
                   </div>
                 </Link>
@@ -44,7 +43,7 @@ export const Header = () => {
           <>
             <Link href={"/"} passHref>
               <div className={styles.HeaderWrapper}>
-                <img src={data} alt='Jyothi Prakash' />
+                <img src={jPIcon.src} alt='Jyothi Prakash' />
                 <div className={styles.nameofUser}>Jyothi Prakash</div>
               </div>
             </Link>

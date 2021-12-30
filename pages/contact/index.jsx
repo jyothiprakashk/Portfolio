@@ -1,12 +1,11 @@
 import React from "react";
-// import Image from "next/image";
 import JP from "../../images/jyothiprakash.jpeg";
 import styles from "../../styles/Contact.module.css";
 import { SocialMedia } from "../../components/SocialMediaIcons/socialmedia";
 const Contact = () => {
   return (
     <div className={styles.ContactWrapper}>
-      <div className={styles.ImageStyle}>{/* <Image src={JP} alt='Jyothi Prakash' /> */}</div>
+      <div className={styles.ImageStyle}>{<img src={JP.src} alt='Jyothi Prakash' />}</div>
       <div className={styles.textWrapper}>
         <h1>Contact Me</h1>
         <p>
@@ -14,7 +13,6 @@ const Contact = () => {
           you with Frontend Technology like JavaScript,NextJs,ReactJs 👨‍💻.
         </p>
         <SocialMedia />
-        {/* <div> */}
         <a
           href='https://github.com/jyothiprakashk/Resume/blob/main/jpresume.pdf'
           download='JyothiPrakash'
@@ -22,7 +20,6 @@ const Contact = () => {
           rel='noreferrer'>
           <button>See My Resume</button>
         </a>
-        {/* </div> */}
       </div>
     </div>
   );
