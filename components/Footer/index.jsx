@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../../styles/SocialMedia.module.css";
-import Github from "../../images/github.png";
-import Image from "next/image";
+import github from "../../images/github.png";
+// import Image from "next/image";
 export const Footer = () => {
   return (
     <div className={styles.FooterWrapper}>
@@ -10,7 +10,8 @@ export const Footer = () => {
         <li>Next Js</li>
         <a href='https://github.com/jyothiprakashk' target='_blank' rel='noreferrer'>
           <li className={styles.githubLogo}>
-            Github <Image src={Github} alt='Github' />
+            Github
+            <img src={github} alt='Github' />
           </li>
         </a>
         <a href='https://en.wikipedia.org/wiki/India' target='_blank' rel='noreferrer'>

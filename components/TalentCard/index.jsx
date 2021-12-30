@@ -1,7 +1,7 @@
 import React from "react";
 import HackerrankIcon from "../../images/hackerrank.png";
 import FreecodeCampIcon from "../../images/freecodecamp.jpeg";
-import Image from "next/image";
+// import Image from "next/image";
 import styles from "../../styles/Education.module.css";
 const Cards = [
   { Image: HackerrankIcon, Id: "1", alt: "hackerrank", Link: "https://www.hackerrank.com/pythondjango9704" },
@@ -14,7 +14,7 @@ export const TalentCard = () => {
         return (
           <div key={index} className={styles.imageContainer}>
             <a href={data.Link} target='_blank' rel='noreferrer'>
-              <Image src={data.Image} alt={data.alt} />
+              {/* <Image src={data.Image} alt={data.alt} /> */}
             </a>
           </div>
         );

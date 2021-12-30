@@ -1,14 +1,12 @@
 import React from "react";
-import Image from "next/image";
+// import Image from "next/image";
 import JP from "../../images/jyothiprakash.jpeg";
 import styles from "../../styles/Contact.module.css";
 import { SocialMedia } from "../../components/SocialMediaIcons/socialmedia";
 const Contact = () => {
   return (
     <div className={styles.ContactWrapper}>
-      <div className={styles.ImageStyle}>
-        <Image src={JP} alt='Jyothi Prakash' />
-      </div>
+      <div className={styles.ImageStyle}>{/* <Image src={JP} alt='Jyothi Prakash' /> */}</div>
       <div className={styles.textWrapper}>
         <h1>Contact Me</h1>
         <p>
